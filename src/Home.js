@@ -14,6 +14,7 @@ import Homestyle from './Homestyle';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import Fontisto from 'react-native-vector-icons/Fontisto';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import LinearGradient from 'react-native-linear-gradient';
@@ -32,6 +33,10 @@ const Home = () => {
           </Pressable>
           <Pressable style={Homestyle.homehistorypress}>
             <FontAwesome name="history" size={24} color="white" />
+            {/* <Text style={Homestyle.historytext}>History</Text> */}
+          </Pressable>
+          <Pressable style={Homestyle.homehistorypress}>
+            <FontAwesome5 name="low-vision" size={24} color="white" />
             {/* <Text style={Homestyle.historytext}>History</Text> */}
           </Pressable>
           <Pressable style={Homestyle.homehistorypress}>
@@ -67,6 +72,16 @@ const Home = () => {
               <AntDesign name="pluscircle" size={24} color="white" />
             </Pressable>
           </View>
+        </View>
+        <View style={Homestyle.nftview}>
+          <Pressable style={Homestyle.nftpress}>
+            <Text style={Homestyle.nfttext}>Asset</Text>
+            <Text style={Homestyle.nfttext}>NFTs</Text>
+          </Pressable>
+          <Pressable style={Homestyle.nftpress}>
+            <FontAwesome5 name="photo-video" size={24} color="white" />
+            <AntDesign name="pluscircle" size={24} color="white" />
+          </Pressable>
         </View>
         <FlatList
           style={{backgroundColor: '#0D0D2B'}}

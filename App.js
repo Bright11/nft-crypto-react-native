@@ -5,8 +5,10 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createMaterialBottomTabNavigator} from '@react-navigation/material-bottom-tabs';
 import Home from './src/Home';
 import AntDesign from 'react-native-vector-icons/AntDesign';
+
 import Wallet from './src/Wallet';
 import Settings from './src/Settings';
+import Profile from './src/Profile';
 //const Stack = createNativeStackNavigator();
 const Tab = createMaterialBottomTabNavigator();
 const App = () => {
@@ -41,6 +43,16 @@ const App = () => {
             tabBarLabel: '',
             tabBarIcon: ({}) => (
               <AntDesign name="carryout" size={24} color="black" />
+            ),
+          }}
+        />
+        <Tab.Screen
+          name="profile"
+          component={Profile}
+          options={{
+            tabBarLabel: '',
+            tabBarIcon: ({}) => (
+              <AntDesign name="profile" size={24} color="black" />
             ),
           }}
         />

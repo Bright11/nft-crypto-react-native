@@ -97,5 +97,20 @@ const Homestyle = StyleSheet.create({
     fontFamily: 'Roboto-Italic.ttf',
     fontWeight: '100',
   },
+  nftview: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    margin: 10,
+  },
+  nftpress: {
+    flexDirection: 'row',
+    gap: 20,
+  },
+  nfttext: {
+    color: 'white',
+    fontFamily: 'Roboto-Italic.ttf',
+    fontWeight: '100',
+    fontSize: 20,
+  },
 });
 export default Homestyle;
